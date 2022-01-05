@@ -28,7 +28,7 @@ MathJax.Hub.Config({
  <tbody>
  <tr id="projectrow">
   <td id="projectalign">
-   <div id="projectname">LBM-DITHERING<span id="projectnumber">&#160;0.0.9</span>
+   <div id="projectname">LBM-DITHERING<span id="projectnumber">&#160;0.2.2</span>
    </div>
    <div id="projectbrief">Halftoning of images with Lattice Boltzmann algorithm</div>
   </td>
@@ -74,15 +74,22 @@ $(function() {
 
 <h3><a id="index_a" name="index_a"></a>- a -</h3><ul>
 <li>add()&#160;:&#160;<a class="el" href="classCsvfile.html#a525b528cf4bccb1babf7a8316e0fd26e">Csvfile</a></li>
-<li>ApplyGaussianFilter()&#160;:&#160;<a class="el" href="classLBMMetrics.html#a6d125a0a78e03ba7f6459868e1a0564a">LBMMetrics</a></li>
+<li>AddToMicroscopicCell()&#160;:&#160;<a class="el" href="classLBMMicroscopicStateAbstract.html#a82c80fd1b9bed0f8e65c87c4f1ad022c">LBMMicroscopicStateAbstract</a>, <a class="el" href="classLBMMicroscopicStateQ9.html#ac20e7062d1745911ac158f08e9cbbbf3">LBMMicroscopicStateQ9</a></li>
+<li>ApplyGaussianFilter()&#160;:&#160;<a class="el" href="classLBMImageMetrics.html#ac6df83691ffac9ede7845cc9fa3bc83b">LBMImageMetrics</a></li>
 </ul>
 
 
 <h3><a id="index_c" name="index_c"></a>- c -</h3><ul>
-<li>CheckSameSize()&#160;:&#160;<a class="el" href="classLBMMetrics.html#a15813497481c9f1e8fe31f0a4a6b2aa2">LBMMetrics</a></li>
+<li>CheckSameSize()&#160;:&#160;<a class="el" href="classLBMImageMetrics.html#a4f3095d958ff92394e0b1a476cbbe52f">LBMImageMetrics</a></li>
+<li>Clone()&#160;:&#160;<a class="el" href="classLBMMicroscopicStateAbstract.html#a7491cbc804f7fb33805ef134de9eb79e">LBMMicroscopicStateAbstract</a>, <a class="el" href="classLBMMicroscopicStateQ9.html#a25881eed413994719d723a4a15e7c17d">LBMMicroscopicStateQ9</a></li>
+<li>Collide()&#160;:&#160;<a class="el" href="classLBMDither.html#a64d05805bf8a262c49e20c52ef2c8627">LBMDither</a></li>
+<li>ComputeEquilibriumState()&#160;:&#160;<a class="el" href="classLBMEquilibriumStateCalculatorAbstract.html#a2e980609c75827dae0688b112e34e7c2">LBMEquilibriumStateCalculatorAbstract</a>, <a class="el" href="classLBMEquilibriumStateCalculatorHagenburg.html#ac68a4c1c1381e61287c254d511e2de5c">LBMEquilibriumStateCalculatorHagenburg</a></li>
+<li>ComputeNewImage()&#160;:&#160;<a class="el" href="classLBMDither.html#a59167fbb94d7c8a486c9287b1068aae3">LBMDither</a></li>
+<li>ComputeRenormalizedWeights()&#160;:&#160;<a class="el" href="classLBMEquilibriumStateCalculatorHagenburg.html#a8288a740f7e58b60938110a23cab1940">LBMEquilibriumStateCalculatorHagenburg</a></li>
+<li>ConfigureDisplayAnimation()&#160;:&#160;<a class="el" href="classLBMDither.html#ae3cb98dcc3a93401b3fa20dbcad4f39a">LBMDither</a></li>
 <li>ConvertFromCVToMatrice()&#160;:&#160;<a class="el" href="classLBMImage.html#a18d0a64751e70bcbf822280e8dac4c40">LBMImage</a></li>
 <li>ConvertFromMatriceToCV()&#160;:&#160;<a class="el" href="classLBMImage.html#ad2a03da6b53ec44abfe38a6bf2087bdf">LBMImage</a></li>
-<li>Copy()&#160;:&#160;<a class="el" href="classLBMImage.html#aec67cc7885d250e08af4ac139bdfed1b">LBMImage</a></li>
+<li>Copy()&#160;:&#160;<a class="el" href="classLBMImage.html#aec67cc7885d250e08af4ac139bdfed1b">LBMImage</a>, <a class="el" href="classLBMMicroscopicStateAbstract.html#a29cfbd4df40fae709f406f20e7f9a502">LBMMicroscopicStateAbstract</a>, <a class="el" href="classLBMMicroscopicStateQ9.html#a8933abf486bd97bb4da1b6f560594988">LBMMicroscopicStateQ9</a></li>
 <li>CreateGaussian()&#160;:&#160;<a class="el" href="classLBMImageCreation.html#ab74d904056144559cdea6f7068c10017">LBMImageCreation</a></li>
 <li>Csvfile()&#160;:&#160;<a class="el" href="classCsvfile.html#a5ccf469345f7441d0650a5d3eb216203">Csvfile</a></li>
 </ul>
@@ -93,6 +100,7 @@ $(function() {
 <li>DisplayImageForMs()&#160;:&#160;<a class="el" href="classLBMImage.html#a3110c8172e6938feb470b139b375c109">LBMImage</a></li>
 <li>DisplayOneImage()&#160;:&#160;<a class="el" href="classLBMImage.html#aad332190ebd055286ee6b0cc2dd60cc3">LBMImage</a></li>
 <li>DisplayTwoImages()&#160;:&#160;<a class="el" href="classLBMImage.html#a4810e40a4be9e4c21553d5f1023b1e30">LBMImage</a></li>
+<li>DoPreservingThreshold()&#160;:&#160;<a class="el" href="classLBMDither.html#a1118f684973be218294b8e7618c8a834">LBMDither</a></li>
 </ul>
 
 
@@ -107,49 +115,66 @@ $(function() {
 
 
 <h3><a id="index_g" name="index_g"></a>- g -</h3><ul>
-<li>GetImageEnergy()&#160;:&#160;<a class="el" href="classLBMMetrics.html#a227c396eb0e91ec8d0e667d8d54a2af7">LBMMetrics</a></li>
-<li>GetImagePoint()&#160;:&#160;<a class="el" href="classLBMImage.html#a5be77adb6b9c10d6b8e14d31453570c1">LBMImage</a></li>
+<li>GetImageEnergy()&#160;:&#160;<a class="el" href="classLBMImageMetrics.html#aade486063bf0d81e977271ad835d70de">LBMImageMetrics</a></li>
+<li>GetImagePoint()&#160;:&#160;<a class="el" href="classLBMImage.html#a091762a5febdd67ae962dbc34fe12cca">LBMImage</a></li>
 <li>GetLBMImageMatrice()&#160;:&#160;<a class="el" href="classLBMImage.html#ac713785e2a46eca8be718b573b611131">LBMImage</a></li>
-<li>GetNDimension()&#160;:&#160;<a class="el" href="classLBMImage.html#ad140e8ff1a41eb321ddb4b7a23078b72">LBMImage</a></li>
-<li>GetPDimension()&#160;:&#160;<a class="el" href="classLBMImage.html#a4b809d57047fbb2176166e5e49099655">LBMImage</a></li>
-<li>GSSIM()&#160;:&#160;<a class="el" href="classLBMMetrics.html#a44d8397fe239e4bfd85f72dd4f52a8ac">LBMMetrics</a></li>
+<li>GetMicroscopicCell()&#160;:&#160;<a class="el" href="classLBMMicroscopicStateAbstract.html#abb5417a2a8879ab3f3e78c221e1d0535">LBMMicroscopicStateAbstract</a>, <a class="el" href="classLBMMicroscopicStateQ9.html#abe5920bd2bfe900f7faf1b1088b548f5">LBMMicroscopicStateQ9</a></li>
+<li>GetNbCols()&#160;:&#160;<a class="el" href="classLBMImage.html#a983f9ad9e9d86f12fe4b8870f2dd9a93">LBMImage</a>, <a class="el" href="classLBMMicroscopicStateAbstract.html#acbaa1ba35185681a90ff368c965eab3a">LBMMicroscopicStateAbstract</a></li>
+<li>GetNbRows()&#160;:&#160;<a class="el" href="classLBMImage.html#ad1f795673f5126846ce307f8e47b494a">LBMImage</a>, <a class="el" href="classLBMMicroscopicStateAbstract.html#a8ae00a0102fc5447cf755ca2528da044">LBMMicroscopicStateAbstract</a></li>
+<li>GetSumOfPoint()&#160;:&#160;<a class="el" href="classLBMMicroscopicStateAbstract.html#a707659f6c8850868dc9ab473860cc231">LBMMicroscopicStateAbstract</a>, <a class="el" href="classLBMMicroscopicStateQ9.html#a92c7bc899266b0a88576b70b70ab8b04">LBMMicroscopicStateQ9</a></li>
+<li>GetSumOfState()&#160;:&#160;<a class="el" href="classLBMMicroscopicStateAbstract.html#a2a5f251a2f0cd247d7bcaaf3afc1ada5">LBMMicroscopicStateAbstract</a>, <a class="el" href="classLBMMicroscopicStateQ9.html#a54b7513fe35c696bcafd798a8abf2c83">LBMMicroscopicStateQ9</a></li>
+<li>GSSIM()&#160;:&#160;<a class="el" href="classLBMImageMetrics.html#a587d9252fd57622e6f71f12611bfeb38">LBMImageMetrics</a></li>
 </ul>
 
 
 <h3><a id="index_i" name="index_i"></a>- i -</h3><ul>
-<li>IsInImage()&#160;:&#160;<a class="el" href="classLBMImage.html#a4d791489aa1964c89e4d3b57a823b8c5">LBMImage</a></li>
+<li>InitializeMicroscopicState()&#160;:&#160;<a class="el" href="classLBMMicroscopicStateAbstract.html#a8cc163e7c2bbd4c817f4e630b5ec8d1b">LBMMicroscopicStateAbstract</a>, <a class="el" href="classLBMMicroscopicStateQ9.html#a22a2ee283ac4399dc6b73190126548e4">LBMMicroscopicStateQ9</a></li>
+<li>IsInImage()&#160;:&#160;<a class="el" href="classLBMImage.html#a14dff6af75592522b4ccdad65d4c9864">LBMImage</a></li>
 </ul>
 
 
 <h3><a id="index_l" name="index_l"></a>- l -</h3><ul>
-<li>LBMDither()&#160;:&#160;<a class="el" href="classLBMDither.html#ada5041df084240bd2616ff7690d21b6d">LBMDither</a></li>
+<li>LBMDither()&#160;:&#160;<a class="el" href="classLBMDither.html#a3bf791e0469b6e6d72a57131e362aa96">LBMDither</a></li>
+<li>LBMEquilibriumStateCalculatorHagenburg()&#160;:&#160;<a class="el" href="classLBMEquilibriumStateCalculatorHagenburg.html#a0046e916105a482233552f9014641543">LBMEquilibriumStateCalculatorHagenburg</a></li>
 <li>LBMImage()&#160;:&#160;<a class="el" href="classLBMImage.html#a7f6c2e41694a11796d9dd37bca017527">LBMImage</a></li>
-<li>LoadImage()&#160;:&#160;<a class="el" href="classLBMImage.html#a0d65ae0664745d2db213b54f7d4bc824">LBMImage</a></li>
+<li>LoadImage()&#160;:&#160;<a class="el" href="classLBMImage.html#ae04c4f0b448ca65fc07d126454fe4da4">LBMImage</a></li>
 </ul>
 
 
 <h3><a id="index_m" name="index_m"></a>- m -</h3><ul>
-<li>MSE()&#160;:&#160;<a class="el" href="classLBMMetrics.html#afc92b23dccfe18ab06239ac227556118">LBMMetrics</a></li>
-<li>MSSIM()&#160;:&#160;<a class="el" href="classLBMMetrics.html#a1afe9874948453a0be59af520a843f1e">LBMMetrics</a></li>
-<li>MWLE()&#160;:&#160;<a class="el" href="classLBMMetrics.html#a08006a63295bfbc0a8dca8d2e80ce6e5">LBMMetrics</a></li>
+<li>MSE()&#160;:&#160;<a class="el" href="classLBMImageMetrics.html#aff7cfeb2c0e425cd902000227460e535">LBMImageMetrics</a></li>
+<li>MSSIM()&#160;:&#160;<a class="el" href="classLBMImageMetrics.html#af823eaeb57e30d6d0c36ff48699e9e37">LBMImageMetrics</a></li>
+<li>MWLE()&#160;:&#160;<a class="el" href="classLBMImageMetrics.html#a44c2b3a58e5aac746b8c987c33384886">LBMImageMetrics</a></li>
 </ul>
 
 
 <h3><a id="index_n" name="index_n"></a>- n -</h3><ul>
-<li>NormTwo()&#160;:&#160;<a class="el" href="classLBMMetrics.html#a53f7f8b67f7483020410700287fcdcc1">LBMMetrics</a></li>
+<li>NormTwo()&#160;:&#160;<a class="el" href="classLBMImageMetrics.html#af6e7164a61c610ed75df5f3a0b7e5ca0">LBMImageMetrics</a></li>
+</ul>
+
+
+<h3><a id="index_p" name="index_p"></a>- p -</h3><ul>
+<li>PrepareImage()&#160;:&#160;<a class="el" href="classLBMDither.html#a7a2f75b252bbcdb21764e39058c3ec5c">LBMDither</a></li>
+<li>PrepareInitalMicroscopicState()&#160;:&#160;<a class="el" href="classLBMDither.html#a368b35cf2caf778ecc46bcc42cbfb2d4">LBMDither</a></li>
 </ul>
 
 
 <h3><a id="index_r" name="index_r"></a>- r -</h3><ul>
-<li>RMSE()&#160;:&#160;<a class="el" href="classLBMMetrics.html#a5b75ea7f45648b22f436bc879ed93d72">LBMMetrics</a></li>
+<li>Reset()&#160;:&#160;<a class="el" href="classLBMMicroscopicStateAbstract.html#a1aa4f6190e7f097940df376a14ada535">LBMMicroscopicStateAbstract</a>, <a class="el" href="classLBMMicroscopicStateQ9.html#a1f50cfcd96c33ccf905785c0e15a994e">LBMMicroscopicStateQ9</a></li>
+<li>RMSE()&#160;:&#160;<a class="el" href="classLBMImageMetrics.html#aadc897cd6a839a5b2dec9a3ad2534997">LBMImageMetrics</a></li>
+<li>Run()&#160;:&#160;<a class="el" href="classLBMDither.html#a5920cc71e8a5ed046764f7a0a03480e9">LBMDither</a></li>
 </ul>
 
 
 <h3><a id="index_s" name="index_s"></a>- s -</h3><ul>
 <li>SaveImage()&#160;:&#160;<a class="el" href="classLBMImage.html#a8e7e65be09763f0828db6c77870e72bd">LBMImage</a></li>
+<li>SetEquilibriumStateCalculator()&#160;:&#160;<a class="el" href="classLBMDither.html#a5bdd93f47a81d0805a596eaa7f739cc1">LBMDither</a></li>
 <li>setHeader()&#160;:&#160;<a class="el" href="classCsvfile.html#ab625d5485d779f26f39afbd379ac3169">Csvfile</a></li>
-<li>SetImagePoint()&#160;:&#160;<a class="el" href="classLBMImage.html#ac52bf1d5a1487f80f72e820a2eca8d11">LBMImage</a></li>
+<li>SetImage()&#160;:&#160;<a class="el" href="classLBMDither.html#a027b65a1847e5f05dc7d4139d7ef3a98">LBMDither</a></li>
+<li>SetImagePoint()&#160;:&#160;<a class="el" href="classLBMImage.html#a99baafae8850978cff27c9110d0f89aa">LBMImage</a></li>
+<li>SetMicroscopicCell()&#160;:&#160;<a class="el" href="classLBMMicroscopicStateAbstract.html#aebe175107e0e616e34addcf800a4fec6">LBMMicroscopicStateAbstract</a>, <a class="el" href="classLBMMicroscopicStateQ9.html#a78972759dce0239e28ed37b41dcc9557">LBMMicroscopicStateQ9</a></li>
 <li>skip()&#160;:&#160;<a class="el" href="classCsvfile.html#aeac19c7da7643b0feea883e94a0fc7e0">Csvfile</a></li>
+<li>Stream()&#160;:&#160;<a class="el" href="classLBMDither.html#ae44c58ba86b0c2b0de47efcdda426c82">LBMDither</a></li>
 </ul>
 
 

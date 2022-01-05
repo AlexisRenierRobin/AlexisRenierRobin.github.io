@@ -28,7 +28,7 @@ MathJax.Hub.Config({
  <tbody>
  <tr id="projectrow">
   <td id="projectalign">
-   <div id="projectname">LBM-DITHERING<span id="projectnumber">&#160;0.0.9</span>
+   <div id="projectname">LBM-DITHERING<span id="projectnumber">&#160;0.2.2</span>
    </div>
    <div id="projectbrief">Halftoning of images with Lattice Boltzmann algorithm</div>
   </td>
@@ -72,88 +72,113 @@ $(function() {
 <div class="header">
   <div class="summary">
 <a href="#pub-methods">Public Member Functions</a> &#124;
-<a href="#pri-attribs">Private Attributes</a> &#124;
 <a href="classLBMMicroscopicStateQ9-members.html">List of all members</a>  </div>
   <div class="headertitle"><div class="title">LBMMicroscopicStateQ9 Class Reference</div></div>
 </div><!--header-->
 <div class="contents">
+
+<p>Class which implements a microscopic state based on D2Q9 lattice.  
+ <a href="classLBMMicroscopicStateQ9.html#details">More...</a></p>
+
+<p><code>#include &lt;LBMMicroscopicStateQ9.h&gt;</code></p>
 <div class="dynheader">
 Inheritance diagram for LBMMicroscopicStateQ9:</div>
 <div class="dyncontent">
  <div class="center">
   <img src="classLBMMicroscopicStateQ9.png" usemap="#LBMMicroscopicStateQ9_map" alt=""/>
   <map id="LBMMicroscopicStateQ9_map" name="LBMMicroscopicStateQ9_map">
-<area href="classLBMAbstractMicroscopicState.html" alt="LBMAbstractMicroscopicState" shape="rect" coords="0,0,183,24"/>
+<area href="classLBMMicroscopicStateAbstract.html" title="Abstract class of a microscopic state." alt="LBMMicroscopicStateAbstract" shape="rect" coords="0,0,183,24"/>
   </map>
 </div></div>
 <table class="memberdecls">
 <tr class="heading"><td colspan="2"><h2 class="groupheader"><a id="pub-methods" name="pub-methods"></a>
 Public Member Functions</h2></td></tr>
-<tr class="memitem:af54c1450b63a2318699dae2726d3d6d7"><td class="memItemLeft" align="right" valign="top">virtual <a class="el" href="classLBMMicroscopicStateQ9.html">LBMMicroscopicStateQ9</a> *&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classLBMMicroscopicStateQ9.html#af54c1450b63a2318699dae2726d3d6d7">Clone</a> ()</td></tr>
-<tr class="separator:af54c1450b63a2318699dae2726d3d6d7"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a5db5faadc2142f33a07ee17b539731bc"><td class="memItemLeft" align="right" valign="top">virtual void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classLBMMicroscopicStateQ9.html#a5db5faadc2142f33a07ee17b539731bc">CreateMicroscopicState</a> (int n, int p)</td></tr>
-<tr class="separator:a5db5faadc2142f33a07ee17b539731bc"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:aa2bf75802ca0a81800b5345a4097c53c"><td class="memItemLeft" align="right" valign="top">virtual void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classLBMMicroscopicStateQ9.html#aa2bf75802ca0a81800b5345a4097c53c">Reset</a> (int n, int p)</td></tr>
-<tr class="separator:aa2bf75802ca0a81800b5345a4097c53c"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a9c6be6593cee36d423ac7ce181997342"><td class="memItemLeft" align="right" valign="top">virtual void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classLBMMicroscopicStateQ9.html#a9c6be6593cee36d423ac7ce181997342">Copy</a> (<a class="el" href="classLBMAbstractMicroscopicState.html">LBMAbstractMicroscopicState</a> *pState, int n, int p)</td></tr>
-<tr class="separator:a9c6be6593cee36d423ac7ce181997342"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:aaed2dacf8aec0b8653972cd8375561ad"><td class="memItemLeft" align="right" valign="top">virtual int&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classLBMMicroscopicStateQ9.html#aaed2dacf8aec0b8653972cd8375561ad">GetNumberOfNeighbourhoodCells</a> ()</td></tr>
-<tr class="separator:aaed2dacf8aec0b8653972cd8375561ad"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a8e2acefa86e14e1a01b03d9876d4416f"><td class="memItemLeft" align="right" valign="top">virtual double&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classLBMMicroscopicStateQ9.html#a8e2acefa86e14e1a01b03d9876d4416f">GetMicroscopicCell</a> (int i, int j, int ii, int jj)</td></tr>
-<tr class="separator:a8e2acefa86e14e1a01b03d9876d4416f"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a82002ee23fecf864b031e43d7055ee07"><td class="memItemLeft" align="right" valign="top">virtual void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classLBMMicroscopicStateQ9.html#a82002ee23fecf864b031e43d7055ee07">SetMicroscopicCell</a> (int i, int j, int ii, int jj, double value)</td></tr>
-<tr class="separator:a82002ee23fecf864b031e43d7055ee07"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a6ae17b14aa6c3bbffb6a361d64adabee"><td class="memItemLeft" align="right" valign="top">virtual void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classLBMMicroscopicStateQ9.html#a6ae17b14aa6c3bbffb6a361d64adabee">AddToMicroscopicCell</a> (int i, int j, int ii, int jj, double value)</td></tr>
-<tr class="separator:a6ae17b14aa6c3bbffb6a361d64adabee"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a07fabcb731d6432abf676f9ac7863fc5"><td class="memItemLeft" align="right" valign="top">virtual double&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classLBMMicroscopicStateQ9.html#a07fabcb731d6432abf676f9ac7863fc5">GetSumOfPoint</a> (int i, int j)</td></tr>
-<tr class="separator:a07fabcb731d6432abf676f9ac7863fc5"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:afc5af85560541cd544cde240317f6b94"><td class="memItemLeft" align="right" valign="top">virtual double&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classLBMMicroscopicStateQ9.html#afc5af85560541cd544cde240317f6b94">GetSumOfState</a> (int n, int p)</td></tr>
-<tr class="separator:afc5af85560541cd544cde240317f6b94"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:ad97cc1675e782a6e3cc03f2bcdbbf392"><td class="memItemLeft" align="right" valign="top">virtual void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classLBMMicroscopicStateQ9.html#ad97cc1675e782a6e3cc03f2bcdbbf392">UpdateMicroscopicStateFromImage</a> (<a class="el" href="classLBMImage.html">LBMImage</a> &amp;rImage)</td></tr>
-<tr class="separator:ad97cc1675e782a6e3cc03f2bcdbbf392"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a65c609e63f5e85f1d9ef0070ae1cdc02"><td class="memItemLeft" align="right" valign="top"><a id="a65c609e63f5e85f1d9ef0070ae1cdc02" name="a65c609e63f5e85f1d9ef0070ae1cdc02"></a>
-virtual <a class="el" href="classLBMAbstractMicroscopicState.html">LBMAbstractMicroscopicState</a> *&#160;</td><td class="memItemRight" valign="bottom"><b>Clone</b> ()=0</td></tr>
-<tr class="separator:a65c609e63f5e85f1d9ef0070ae1cdc02"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:adc9cea0dd4fe2ab05d24123f25dc4d78"><td class="memItemLeft" align="right" valign="top"><a id="adc9cea0dd4fe2ab05d24123f25dc4d78" name="adc9cea0dd4fe2ab05d24123f25dc4d78"></a>
-virtual void&#160;</td><td class="memItemRight" valign="bottom"><b>CreateMicroscopicState</b> (int n, int p)=0</td></tr>
-<tr class="separator:adc9cea0dd4fe2ab05d24123f25dc4d78"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a9dae905def45edfc163d83e1bc32ed57"><td class="memItemLeft" align="right" valign="top"><a id="a9dae905def45edfc163d83e1bc32ed57" name="a9dae905def45edfc163d83e1bc32ed57"></a>
-virtual void&#160;</td><td class="memItemRight" valign="bottom"><b>Reset</b> (int n, int p)=0</td></tr>
-<tr class="separator:a9dae905def45edfc163d83e1bc32ed57"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:ae53bb8615dc05cce6d82db2e0a521f04"><td class="memItemLeft" align="right" valign="top"><a id="ae53bb8615dc05cce6d82db2e0a521f04" name="ae53bb8615dc05cce6d82db2e0a521f04"></a>
-virtual void&#160;</td><td class="memItemRight" valign="bottom"><b>Copy</b> (<a class="el" href="classLBMAbstractMicroscopicState.html">LBMAbstractMicroscopicState</a> *pState, int n, int p)=0</td></tr>
-<tr class="separator:ae53bb8615dc05cce6d82db2e0a521f04"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:aa4d5f1fe1e27970039789c7a440ff678"><td class="memItemLeft" align="right" valign="top"><a id="aa4d5f1fe1e27970039789c7a440ff678" name="aa4d5f1fe1e27970039789c7a440ff678"></a>
-virtual int&#160;</td><td class="memItemRight" valign="bottom"><b>GetNumberOfNeighbourhoodCells</b> ()=0</td></tr>
-<tr class="separator:aa4d5f1fe1e27970039789c7a440ff678"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a06b38632b84e1da8ede9055937a13f18"><td class="memItemLeft" align="right" valign="top"><a id="a06b38632b84e1da8ede9055937a13f18" name="a06b38632b84e1da8ede9055937a13f18"></a>
-virtual double&#160;</td><td class="memItemRight" valign="bottom"><b>GetMicroscopicCell</b> (int i, int j, int ii, int jj)=0</td></tr>
-<tr class="separator:a06b38632b84e1da8ede9055937a13f18"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:ab696236e8802803cd89a9ababe1830eb"><td class="memItemLeft" align="right" valign="top"><a id="ab696236e8802803cd89a9ababe1830eb" name="ab696236e8802803cd89a9ababe1830eb"></a>
-virtual void&#160;</td><td class="memItemRight" valign="bottom"><b>SetMicroscopicCell</b> (int i, int j, int ii, int jj, double value)=0</td></tr>
-<tr class="separator:ab696236e8802803cd89a9ababe1830eb"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:afda4d17c4877576df808e3d3d99329f9"><td class="memItemLeft" align="right" valign="top"><a id="afda4d17c4877576df808e3d3d99329f9" name="afda4d17c4877576df808e3d3d99329f9"></a>
-virtual void&#160;</td><td class="memItemRight" valign="bottom"><b>AddToMicroscopicCell</b> (int i, int j, int ii, int jj, double value)=0</td></tr>
-<tr class="separator:afda4d17c4877576df808e3d3d99329f9"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a589c43d0084e9f3cc1e3f08e7f24f085"><td class="memItemLeft" align="right" valign="top"><a id="a589c43d0084e9f3cc1e3f08e7f24f085" name="a589c43d0084e9f3cc1e3f08e7f24f085"></a>
-virtual double&#160;</td><td class="memItemRight" valign="bottom"><b>GetSumOfPoint</b> (int i, int j)=0</td></tr>
-<tr class="separator:a589c43d0084e9f3cc1e3f08e7f24f085"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a64e1e67f635659677197f690fc08ccaf"><td class="memItemLeft" align="right" valign="top"><a id="a64e1e67f635659677197f690fc08ccaf" name="a64e1e67f635659677197f690fc08ccaf"></a>
-virtual double&#160;</td><td class="memItemRight" valign="bottom"><b>GetSumOfState</b> (int n, int p)=0</td></tr>
-<tr class="separator:a64e1e67f635659677197f690fc08ccaf"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a22c66443b807a9fcc5d106205fa200bb"><td class="memItemLeft" align="right" valign="top"><a id="a22c66443b807a9fcc5d106205fa200bb" name="a22c66443b807a9fcc5d106205fa200bb"></a>
-virtual void&#160;</td><td class="memItemRight" valign="bottom"><b>UpdateMicroscopicStateFromImage</b> (<a class="el" href="classLBMImage.html">LBMImage</a> &amp;rImage)=0</td></tr>
-<tr class="separator:a22c66443b807a9fcc5d106205fa200bb"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a25881eed413994719d723a4a15e7c17d"><td class="memItemLeft" align="right" valign="top">virtual <a class="el" href="classLBMMicroscopicStateQ9.html">LBMMicroscopicStateQ9</a> *&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classLBMMicroscopicStateQ9.html#a25881eed413994719d723a4a15e7c17d">Clone</a> () const</td></tr>
+<tr class="memdesc:a25881eed413994719d723a4a15e7c17d"><td class="mdescLeft">&#160;</td><td class="mdescRight">Clones the micoscopic state.  <a href="classLBMMicroscopicStateQ9.html#a25881eed413994719d723a4a15e7c17d">More...</a><br /></td></tr>
+<tr class="separator:a25881eed413994719d723a4a15e7c17d"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a22a2ee283ac4399dc6b73190126548e4"><td class="memItemLeft" align="right" valign="top">virtual void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classLBMMicroscopicStateQ9.html#a22a2ee283ac4399dc6b73190126548e4">InitializeMicroscopicState</a> (int nbRows, int nbCols)</td></tr>
+<tr class="memdesc:a22a2ee283ac4399dc6b73190126548e4"><td class="mdescLeft">&#160;</td><td class="mdescRight">Initalizes the microscopic state with all cells to 0.  <a href="classLBMMicroscopicStateQ9.html#a22a2ee283ac4399dc6b73190126548e4">More...</a><br /></td></tr>
+<tr class="separator:a22a2ee283ac4399dc6b73190126548e4"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a1f50cfcd96c33ccf905785c0e15a994e"><td class="memItemLeft" align="right" valign="top">virtual void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classLBMMicroscopicStateQ9.html#a1f50cfcd96c33ccf905785c0e15a994e">Reset</a> ()</td></tr>
+<tr class="memdesc:a1f50cfcd96c33ccf905785c0e15a994e"><td class="mdescLeft">&#160;</td><td class="mdescRight">Resets the microscopic state by putting all cells to 0.  <a href="classLBMMicroscopicStateQ9.html#a1f50cfcd96c33ccf905785c0e15a994e">More...</a><br /></td></tr>
+<tr class="separator:a1f50cfcd96c33ccf905785c0e15a994e"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a8933abf486bd97bb4da1b6f560594988"><td class="memItemLeft" align="right" valign="top">virtual int&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classLBMMicroscopicStateQ9.html#a8933abf486bd97bb4da1b6f560594988">Copy</a> (<a class="el" href="classLBMMicroscopicStateAbstract.html">LBMMicroscopicStateAbstract</a> const *pMicroscopicState)</td></tr>
+<tr class="memdesc:a8933abf486bd97bb4da1b6f560594988"><td class="mdescLeft">&#160;</td><td class="mdescRight">Copies a microscopic state.  <a href="classLBMMicroscopicStateQ9.html#a8933abf486bd97bb4da1b6f560594988">More...</a><br /></td></tr>
+<tr class="separator:a8933abf486bd97bb4da1b6f560594988"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:abe5920bd2bfe900f7faf1b1088b548f5"><td class="memItemLeft" align="right" valign="top">virtual double&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classLBMMicroscopicStateQ9.html#abe5920bd2bfe900f7faf1b1088b548f5">GetMicroscopicCell</a> (int rowIndex, int colIndex, int subRowIndex, int subColIndex) const</td></tr>
+<tr class="memdesc:abe5920bd2bfe900f7faf1b1088b548f5"><td class="mdescLeft">&#160;</td><td class="mdescRight">Returns the value at the specified cell in this microscopic state.  <a href="classLBMMicroscopicStateQ9.html#abe5920bd2bfe900f7faf1b1088b548f5">More...</a><br /></td></tr>
+<tr class="separator:abe5920bd2bfe900f7faf1b1088b548f5"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a78972759dce0239e28ed37b41dcc9557"><td class="memItemLeft" align="right" valign="top">virtual void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classLBMMicroscopicStateQ9.html#a78972759dce0239e28ed37b41dcc9557">SetMicroscopicCell</a> (int rowIndex, int colIndex, int subRowIndex, int subColIndex, double value)</td></tr>
+<tr class="memdesc:a78972759dce0239e28ed37b41dcc9557"><td class="mdescLeft">&#160;</td><td class="mdescRight">Replaces the value at the specified cell in this microscopic state with the specified value.  <a href="classLBMMicroscopicStateQ9.html#a78972759dce0239e28ed37b41dcc9557">More...</a><br /></td></tr>
+<tr class="separator:a78972759dce0239e28ed37b41dcc9557"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ac20e7062d1745911ac158f08e9cbbbf3"><td class="memItemLeft" align="right" valign="top">virtual void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classLBMMicroscopicStateQ9.html#ac20e7062d1745911ac158f08e9cbbbf3">AddToMicroscopicCell</a> (int rowIndex, int colIndex, int subRowIndex, int subColIndex, double value)</td></tr>
+<tr class="memdesc:ac20e7062d1745911ac158f08e9cbbbf3"><td class="mdescLeft">&#160;</td><td class="mdescRight">Adds the specified value to the value at the specified cell in this microscopic state.  <a href="classLBMMicroscopicStateQ9.html#ac20e7062d1745911ac158f08e9cbbbf3">More...</a><br /></td></tr>
+<tr class="separator:ac20e7062d1745911ac158f08e9cbbbf3"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a92c7bc899266b0a88576b70b70ab8b04"><td class="memItemLeft" align="right" valign="top">virtual double&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classLBMMicroscopicStateQ9.html#a92c7bc899266b0a88576b70b70ab8b04">GetSumOfPoint</a> (int rowIndex, int colIndex) const</td></tr>
+<tr class="memdesc:a92c7bc899266b0a88576b70b70ab8b04"><td class="mdescLeft">&#160;</td><td class="mdescRight">Returns the sum of all cells of the specified point in the microscopic state.  <a href="classLBMMicroscopicStateQ9.html#a92c7bc899266b0a88576b70b70ab8b04">More...</a><br /></td></tr>
+<tr class="separator:a92c7bc899266b0a88576b70b70ab8b04"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a54b7513fe35c696bcafd798a8abf2c83"><td class="memItemLeft" align="right" valign="top">virtual double&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classLBMMicroscopicStateQ9.html#a54b7513fe35c696bcafd798a8abf2c83">GetSumOfState</a> () const</td></tr>
+<tr class="memdesc:a54b7513fe35c696bcafd798a8abf2c83"><td class="mdescLeft">&#160;</td><td class="mdescRight">Returns the sum of all cells in the microscopic state.  <a href="classLBMMicroscopicStateQ9.html#a54b7513fe35c696bcafd798a8abf2c83">More...</a><br /></td></tr>
+<tr class="separator:a54b7513fe35c696bcafd798a8abf2c83"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="inherit_header pub_methods_classLBMMicroscopicStateAbstract"><td colspan="2" onclick="javascript:toggleInherit('pub_methods_classLBMMicroscopicStateAbstract')"><img src="closed.png" alt="-"/>&#160;Public Member Functions inherited from <a class="el" href="classLBMMicroscopicStateAbstract.html">LBMMicroscopicStateAbstract</a></td></tr>
+<tr class="memitem:a7491cbc804f7fb33805ef134de9eb79e inherit pub_methods_classLBMMicroscopicStateAbstract"><td class="memItemLeft" align="right" valign="top">virtual <a class="el" href="classLBMMicroscopicStateAbstract.html">LBMMicroscopicStateAbstract</a> *&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classLBMMicroscopicStateAbstract.html#a7491cbc804f7fb33805ef134de9eb79e">Clone</a> () const =0</td></tr>
+<tr class="memdesc:a7491cbc804f7fb33805ef134de9eb79e inherit pub_methods_classLBMMicroscopicStateAbstract"><td class="mdescLeft">&#160;</td><td class="mdescRight">Clones the micoscopic state.  <a href="classLBMMicroscopicStateAbstract.html#a7491cbc804f7fb33805ef134de9eb79e">More...</a><br /></td></tr>
+<tr class="separator:a7491cbc804f7fb33805ef134de9eb79e inherit pub_methods_classLBMMicroscopicStateAbstract"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a8cc163e7c2bbd4c817f4e630b5ec8d1b inherit pub_methods_classLBMMicroscopicStateAbstract"><td class="memItemLeft" align="right" valign="top">virtual void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classLBMMicroscopicStateAbstract.html#a8cc163e7c2bbd4c817f4e630b5ec8d1b">InitializeMicroscopicState</a> (int nbRows, int nbCols)=0</td></tr>
+<tr class="memdesc:a8cc163e7c2bbd4c817f4e630b5ec8d1b inherit pub_methods_classLBMMicroscopicStateAbstract"><td class="mdescLeft">&#160;</td><td class="mdescRight">Initalizes the microscopic state with all cells to 0.  <a href="classLBMMicroscopicStateAbstract.html#a8cc163e7c2bbd4c817f4e630b5ec8d1b">More...</a><br /></td></tr>
+<tr class="separator:a8cc163e7c2bbd4c817f4e630b5ec8d1b inherit pub_methods_classLBMMicroscopicStateAbstract"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a1aa4f6190e7f097940df376a14ada535 inherit pub_methods_classLBMMicroscopicStateAbstract"><td class="memItemLeft" align="right" valign="top">virtual void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classLBMMicroscopicStateAbstract.html#a1aa4f6190e7f097940df376a14ada535">Reset</a> ()=0</td></tr>
+<tr class="memdesc:a1aa4f6190e7f097940df376a14ada535 inherit pub_methods_classLBMMicroscopicStateAbstract"><td class="mdescLeft">&#160;</td><td class="mdescRight">Resets the microscopic state by putting all cells to 0.  <a href="classLBMMicroscopicStateAbstract.html#a1aa4f6190e7f097940df376a14ada535">More...</a><br /></td></tr>
+<tr class="separator:a1aa4f6190e7f097940df376a14ada535 inherit pub_methods_classLBMMicroscopicStateAbstract"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a29cfbd4df40fae709f406f20e7f9a502 inherit pub_methods_classLBMMicroscopicStateAbstract"><td class="memItemLeft" align="right" valign="top">virtual int&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classLBMMicroscopicStateAbstract.html#a29cfbd4df40fae709f406f20e7f9a502">Copy</a> (<a class="el" href="classLBMMicroscopicStateAbstract.html">LBMMicroscopicStateAbstract</a> const *pMicroscopicState)=0</td></tr>
+<tr class="memdesc:a29cfbd4df40fae709f406f20e7f9a502 inherit pub_methods_classLBMMicroscopicStateAbstract"><td class="mdescLeft">&#160;</td><td class="mdescRight">Copies a microscopic state.  <a href="classLBMMicroscopicStateAbstract.html#a29cfbd4df40fae709f406f20e7f9a502">More...</a><br /></td></tr>
+<tr class="separator:a29cfbd4df40fae709f406f20e7f9a502 inherit pub_methods_classLBMMicroscopicStateAbstract"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:abb5417a2a8879ab3f3e78c221e1d0535 inherit pub_methods_classLBMMicroscopicStateAbstract"><td class="memItemLeft" align="right" valign="top">virtual double&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classLBMMicroscopicStateAbstract.html#abb5417a2a8879ab3f3e78c221e1d0535">GetMicroscopicCell</a> (int rowIndex, int colIndex, int subRowIndex, int subColIndex) const =0</td></tr>
+<tr class="memdesc:abb5417a2a8879ab3f3e78c221e1d0535 inherit pub_methods_classLBMMicroscopicStateAbstract"><td class="mdescLeft">&#160;</td><td class="mdescRight">Returns the value at the specified cell in this microscopic state.  <a href="classLBMMicroscopicStateAbstract.html#abb5417a2a8879ab3f3e78c221e1d0535">More...</a><br /></td></tr>
+<tr class="separator:abb5417a2a8879ab3f3e78c221e1d0535 inherit pub_methods_classLBMMicroscopicStateAbstract"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:aebe175107e0e616e34addcf800a4fec6 inherit pub_methods_classLBMMicroscopicStateAbstract"><td class="memItemLeft" align="right" valign="top">virtual void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classLBMMicroscopicStateAbstract.html#aebe175107e0e616e34addcf800a4fec6">SetMicroscopicCell</a> (int rowIndex, int colIndex, int subRowIndex, int subColIndex, double value)=0</td></tr>
+<tr class="memdesc:aebe175107e0e616e34addcf800a4fec6 inherit pub_methods_classLBMMicroscopicStateAbstract"><td class="mdescLeft">&#160;</td><td class="mdescRight">Replaces the value at the specified cell in this microscopic state with the specified value.  <a href="classLBMMicroscopicStateAbstract.html#aebe175107e0e616e34addcf800a4fec6">More...</a><br /></td></tr>
+<tr class="separator:aebe175107e0e616e34addcf800a4fec6 inherit pub_methods_classLBMMicroscopicStateAbstract"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a82c80fd1b9bed0f8e65c87c4f1ad022c inherit pub_methods_classLBMMicroscopicStateAbstract"><td class="memItemLeft" align="right" valign="top">virtual void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classLBMMicroscopicStateAbstract.html#a82c80fd1b9bed0f8e65c87c4f1ad022c">AddToMicroscopicCell</a> (int rowIndex, int colIndex, int subRowIndex, int subColIndex, double value)=0</td></tr>
+<tr class="memdesc:a82c80fd1b9bed0f8e65c87c4f1ad022c inherit pub_methods_classLBMMicroscopicStateAbstract"><td class="mdescLeft">&#160;</td><td class="mdescRight">Adds the specified value to the value at the specified cell in this microscopic state.  <a href="classLBMMicroscopicStateAbstract.html#a82c80fd1b9bed0f8e65c87c4f1ad022c">More...</a><br /></td></tr>
+<tr class="separator:a82c80fd1b9bed0f8e65c87c4f1ad022c inherit pub_methods_classLBMMicroscopicStateAbstract"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a707659f6c8850868dc9ab473860cc231 inherit pub_methods_classLBMMicroscopicStateAbstract"><td class="memItemLeft" align="right" valign="top">virtual double&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classLBMMicroscopicStateAbstract.html#a707659f6c8850868dc9ab473860cc231">GetSumOfPoint</a> (int rowIndex, int colIndex) const =0</td></tr>
+<tr class="memdesc:a707659f6c8850868dc9ab473860cc231 inherit pub_methods_classLBMMicroscopicStateAbstract"><td class="mdescLeft">&#160;</td><td class="mdescRight">Returns the sum of all cells of the specified point in the microscopic state.  <a href="classLBMMicroscopicStateAbstract.html#a707659f6c8850868dc9ab473860cc231">More...</a><br /></td></tr>
+<tr class="separator:a707659f6c8850868dc9ab473860cc231 inherit pub_methods_classLBMMicroscopicStateAbstract"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a2a5f251a2f0cd247d7bcaaf3afc1ada5 inherit pub_methods_classLBMMicroscopicStateAbstract"><td class="memItemLeft" align="right" valign="top">virtual double&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classLBMMicroscopicStateAbstract.html#a2a5f251a2f0cd247d7bcaaf3afc1ada5">GetSumOfState</a> () const =0</td></tr>
+<tr class="memdesc:a2a5f251a2f0cd247d7bcaaf3afc1ada5 inherit pub_methods_classLBMMicroscopicStateAbstract"><td class="mdescLeft">&#160;</td><td class="mdescRight">Returns the sum of all cells in the microscopic state.  <a href="classLBMMicroscopicStateAbstract.html#a2a5f251a2f0cd247d7bcaaf3afc1ada5">More...</a><br /></td></tr>
+<tr class="separator:a2a5f251a2f0cd247d7bcaaf3afc1ada5 inherit pub_methods_classLBMMicroscopicStateAbstract"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a8ae00a0102fc5447cf755ca2528da044 inherit pub_methods_classLBMMicroscopicStateAbstract"><td class="memItemLeft" align="right" valign="top">virtual int&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classLBMMicroscopicStateAbstract.html#a8ae00a0102fc5447cf755ca2528da044">GetNbRows</a> () const</td></tr>
+<tr class="memdesc:a8ae00a0102fc5447cf755ca2528da044 inherit pub_methods_classLBMMicroscopicStateAbstract"><td class="mdescLeft">&#160;</td><td class="mdescRight">Returns the number of rows of the microscopic state.  <a href="classLBMMicroscopicStateAbstract.html#a8ae00a0102fc5447cf755ca2528da044">More...</a><br /></td></tr>
+<tr class="separator:a8ae00a0102fc5447cf755ca2528da044 inherit pub_methods_classLBMMicroscopicStateAbstract"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:acbaa1ba35185681a90ff368c965eab3a inherit pub_methods_classLBMMicroscopicStateAbstract"><td class="memItemLeft" align="right" valign="top">virtual int&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classLBMMicroscopicStateAbstract.html#acbaa1ba35185681a90ff368c965eab3a">GetNbCols</a> () const</td></tr>
+<tr class="memdesc:acbaa1ba35185681a90ff368c965eab3a inherit pub_methods_classLBMMicroscopicStateAbstract"><td class="mdescLeft">&#160;</td><td class="mdescRight">Returns the number of columns of the microscopic state.  <a href="classLBMMicroscopicStateAbstract.html#acbaa1ba35185681a90ff368c965eab3a">More...</a><br /></td></tr>
+<tr class="separator:acbaa1ba35185681a90ff368c965eab3a inherit pub_methods_classLBMMicroscopicStateAbstract"><td class="memSeparator" colspan="2">&#160;</td></tr>
 </table><table class="memberdecls">
-<tr class="heading"><td colspan="2"><h2 class="groupheader"><a id="pri-attribs" name="pri-attribs"></a>
-Private Attributes</h2></td></tr>
-<tr class="memitem:af7187f09216433f31a4bc428728dfcb3"><td class="memItemLeft" align="right" valign="top"><a id="af7187f09216433f31a4bc428728dfcb3" name="af7187f09216433f31a4bc428728dfcb3"></a>
+<tr class="heading"><td colspan="2"><h2 class="groupheader"><a id="inherited" name="inherited"></a>
+Additional Inherited Members</h2></td></tr>
+<tr class="inherit_header pro_attribs_classLBMMicroscopicStateAbstract"><td colspan="2" onclick="javascript:toggleInherit('pro_attribs_classLBMMicroscopicStateAbstract')"><img src="closed.png" alt="-"/>&#160;Protected Attributes inherited from <a class="el" href="classLBMMicroscopicStateAbstract.html">LBMMicroscopicStateAbstract</a></td></tr>
+<tr class="memitem:ad38fc6b5e16b19c27e84e0ce1d92a7ac inherit pro_attribs_classLBMMicroscopicStateAbstract"><td class="memItemLeft" align="right" valign="top"><a id="ad38fc6b5e16b19c27e84e0ce1d92a7ac" name="ad38fc6b5e16b19c27e84e0ce1d92a7ac"></a>
 std::vector&lt; std::vector&lt; std::vector&lt; std::vector&lt; double &gt; &gt; &gt; &gt;&#160;</td><td class="memItemRight" valign="bottom"><b>mMicroscopicState</b></td></tr>
-<tr class="separator:af7187f09216433f31a4bc428728dfcb3"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memdesc:ad38fc6b5e16b19c27e84e0ce1d92a7ac inherit pro_attribs_classLBMMicroscopicStateAbstract"><td class="mdescLeft">&#160;</td><td class="mdescRight">Microscopic state. <br /></td></tr>
+<tr class="separator:ad38fc6b5e16b19c27e84e0ce1d92a7ac inherit pro_attribs_classLBMMicroscopicStateAbstract"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ad69fbf79a12ec70bc10836192cf8259f inherit pro_attribs_classLBMMicroscopicStateAbstract"><td class="memItemLeft" align="right" valign="top"><a id="ad69fbf79a12ec70bc10836192cf8259f" name="ad69fbf79a12ec70bc10836192cf8259f"></a>
+int&#160;</td><td class="memItemRight" valign="bottom"><b>mNbRows</b></td></tr>
+<tr class="separator:ad69fbf79a12ec70bc10836192cf8259f inherit pro_attribs_classLBMMicroscopicStateAbstract"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:aec2907f0029faaf2cee965554defe3b8 inherit pro_attribs_classLBMMicroscopicStateAbstract"><td class="memItemLeft" align="right" valign="top"><a id="aec2907f0029faaf2cee965554defe3b8" name="aec2907f0029faaf2cee965554defe3b8"></a>
+int&#160;</td><td class="memItemRight" valign="bottom"><b>mNbCols</b></td></tr>
+<tr class="separator:aec2907f0029faaf2cee965554defe3b8 inherit pro_attribs_classLBMMicroscopicStateAbstract"><td class="memSeparator" colspan="2">&#160;</td></tr>
 </table>
-<h2 class="groupheader">Member Function Documentation</h2>
-<a id="a6ae17b14aa6c3bbffb6a361d64adabee" name="a6ae17b14aa6c3bbffb6a361d64adabee"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#a6ae17b14aa6c3bbffb6a361d64adabee">&#9670;&nbsp;</a></span>AddToMicroscopicCell()</h2>
+<a name="details" id="details"></a><h2 class="groupheader">Detailed Description</h2>
+<div class="textblock"><p >Class which implements a microscopic state based on D2Q9 lattice. </p>
+<p >Vocabulary :</p>
+<ul>
+<li>The microscopic state is composed of n rows and p cols : n*p points</li>
+<li>Each point is composed of 3 rows asn 3 cols : 3*3 cells </li>
+</ul>
+</div><h2 class="groupheader">Member Function Documentation</h2>
+<a id="ac20e7062d1745911ac158f08e9cbbbf3" name="ac20e7062d1745911ac158f08e9cbbbf3"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#ac20e7062d1745911ac158f08e9cbbbf3">&#9670;&nbsp;</a></span>AddToMicroscopicCell()</h2>
 
 <div class="memitem">
 <div class="memproto">
@@ -165,25 +190,25 @@ std::vector&lt; std::vector&lt; std::vector&lt; std::vector&lt; double &gt; &gt;
           <td class="memname">void LBMMicroscopicStateQ9::AddToMicroscopicCell </td>
           <td>(</td>
           <td class="paramtype">int&#160;</td>
-          <td class="paramname"><em>i</em>, </td>
+          <td class="paramname"><em>rowIndex</em>, </td>
         </tr>
         <tr>
           <td class="paramkey"></td>
           <td></td>
           <td class="paramtype">int&#160;</td>
-          <td class="paramname"><em>j</em>, </td>
+          <td class="paramname"><em>colIndex</em>, </td>
         </tr>
         <tr>
           <td class="paramkey"></td>
           <td></td>
           <td class="paramtype">int&#160;</td>
-          <td class="paramname"><em>ii</em>, </td>
+          <td class="paramname"><em>subRowIndex</em>, </td>
         </tr>
         <tr>
           <td class="paramkey"></td>
           <td></td>
           <td class="paramtype">int&#160;</td>
-          <td class="paramname"><em>jj</em>, </td>
+          <td class="paramname"><em>subColIndex</em>, </td>
         </tr>
         <tr>
           <td class="paramkey"></td>
@@ -204,12 +229,24 @@ std::vector&lt; std::vector&lt; std::vector&lt; std::vector&lt; double &gt; &gt;
 </table>
 </div><div class="memdoc">
 
-<p>Implements <a class="el" href="classLBMAbstractMicroscopicState.html">LBMAbstractMicroscopicState</a>.</p>
+<p>Adds the specified value to the value at the specified cell in this microscopic state. </p>
+<dl class="params"><dt>Parameters</dt><dd>
+  <table class="params">
+    <tr><td class="paramname">rowIndex</td><td>Index of the row of the point where add the value</td></tr>
+    <tr><td class="paramname">colIndex</td><td>Index of the column of the point where add the value</td></tr>
+    <tr><td class="paramname">subRowIndex</td><td>Index of the subrow of the cell where add the value</td></tr>
+    <tr><td class="paramname">subColIndex</td><td>Index of the subcol of the cell where add the value</td></tr>
+    <tr><td class="paramname">value</td><td>Value to be added at the specified cell </td></tr>
+  </table>
+  </dd>
+</dl>
+
+<p>Implements <a class="el" href="classLBMMicroscopicStateAbstract.html#a82c80fd1b9bed0f8e65c87c4f1ad022c">LBMMicroscopicStateAbstract</a>.</p>
 
 </div>
 </div>
-<a id="af54c1450b63a2318699dae2726d3d6d7" name="af54c1450b63a2318699dae2726d3d6d7"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#af54c1450b63a2318699dae2726d3d6d7">&#9670;&nbsp;</a></span>Clone()</h2>
+<a id="a25881eed413994719d723a4a15e7c17d" name="a25881eed413994719d723a4a15e7c17d"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a25881eed413994719d723a4a15e7c17d">&#9670;&nbsp;</a></span>Clone()</h2>
 
 <div class="memitem">
 <div class="memproto">
@@ -221,7 +258,7 @@ std::vector&lt; std::vector&lt; std::vector&lt; std::vector&lt; double &gt; &gt;
           <td class="memname"><a class="el" href="classLBMMicroscopicStateQ9.html">LBMMicroscopicStateQ9</a> * LBMMicroscopicStateQ9::Clone </td>
           <td>(</td>
           <td class="paramname"></td><td>)</td>
-          <td></td>
+          <td> const</td>
         </tr>
       </table>
   </td>
@@ -231,12 +268,16 @@ std::vector&lt; std::vector&lt; std::vector&lt; std::vector&lt; double &gt; &gt;
 </table>
 </div><div class="memdoc">
 
-<p>Implements <a class="el" href="classLBMAbstractMicroscopicState.html">LBMAbstractMicroscopicState</a>.</p>
+<p>Clones the micoscopic state. </p>
+<dl class="section return"><dt>Returns</dt><dd>A pointer to a new <a class="el" href="classLBMMicroscopicStateQ9.html" title="Class which implements a microscopic state based on D2Q9 lattice.">LBMMicroscopicStateQ9</a> object</dd></dl>
+<dl class="section warning"><dt>Warning</dt><dd>Returns a pointer to an unitialized microscopic state object </dd></dl>
+
+<p>Implements <a class="el" href="classLBMMicroscopicStateAbstract.html#a7491cbc804f7fb33805ef134de9eb79e">LBMMicroscopicStateAbstract</a>.</p>
 
 </div>
 </div>
-<a id="a9c6be6593cee36d423ac7ce181997342" name="a9c6be6593cee36d423ac7ce181997342"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#a9c6be6593cee36d423ac7ce181997342">&#9670;&nbsp;</a></span>Copy()</h2>
+<a id="a8933abf486bd97bb4da1b6f560594988" name="a8933abf486bd97bb4da1b6f560594988"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a8933abf486bd97bb4da1b6f560594988">&#9670;&nbsp;</a></span>Copy()</h2>
 
 <div class="memitem">
 <div class="memproto">
@@ -245,27 +286,11 @@ std::vector&lt; std::vector&lt; std::vector&lt; std::vector&lt; double &gt; &gt;
   <td class="mlabels-left">
       <table class="memname">
         <tr>
-          <td class="memname">void LBMMicroscopicStateQ9::Copy </td>
+          <td class="memname">int LBMMicroscopicStateQ9::Copy </td>
           <td>(</td>
-          <td class="paramtype"><a class="el" href="classLBMAbstractMicroscopicState.html">LBMAbstractMicroscopicState</a> *&#160;</td>
-          <td class="paramname"><em>pState</em>, </td>
-        </tr>
-        <tr>
-          <td class="paramkey"></td>
+          <td class="paramtype"><a class="el" href="classLBMMicroscopicStateAbstract.html">LBMMicroscopicStateAbstract</a> const *&#160;</td>
+          <td class="paramname"><em>pMicroscopicState</em></td><td>)</td>
           <td></td>
-          <td class="paramtype">int&#160;</td>
-          <td class="paramname"><em>n</em>, </td>
-        </tr>
-        <tr>
-          <td class="paramkey"></td>
-          <td></td>
-          <td class="paramtype">int&#160;</td>
-          <td class="paramname"><em>p</em>&#160;</td>
-        </tr>
-        <tr>
-          <td></td>
-          <td>)</td>
-          <td></td><td></td>
         </tr>
       </table>
   </td>
@@ -275,50 +300,22 @@ std::vector&lt; std::vector&lt; std::vector&lt; std::vector&lt; double &gt; &gt;
 </table>
 </div><div class="memdoc">
 
-<p>Implements <a class="el" href="classLBMAbstractMicroscopicState.html">LBMAbstractMicroscopicState</a>.</p>
+<p>Copies a microscopic state. </p>
+<dl class="params"><dt>Parameters</dt><dd>
+  <table class="params">
+    <tr><td class="paramname">pMicroscopicState</td><td>The microscopic state to copy (must has the same dimensions)</td></tr>
+  </table>
+  </dd>
+</dl>
+<dl class="section return"><dt>Returns</dt><dd>0 if sucess, 1 otherwise</dd></dl>
+<dl class="todo"><dt><b><a class="el" href="todo.html#_todo000001">Todo:</a></b></dt><dd>Impose/check a pointer to a <a class="el" href="classLBMMicroscopicStateQ9.html" title="Class which implements a microscopic state based on D2Q9 lattice.">LBMMicroscopicStateQ9</a> object</dd></dl>
+
+<p>Implements <a class="el" href="classLBMMicroscopicStateAbstract.html#a29cfbd4df40fae709f406f20e7f9a502">LBMMicroscopicStateAbstract</a>.</p>
 
 </div>
 </div>
-<a id="a5db5faadc2142f33a07ee17b539731bc" name="a5db5faadc2142f33a07ee17b539731bc"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#a5db5faadc2142f33a07ee17b539731bc">&#9670;&nbsp;</a></span>CreateMicroscopicState()</h2>
-
-<div class="memitem">
-<div class="memproto">
-<table class="mlabels">
-  <tr>
-  <td class="mlabels-left">
-      <table class="memname">
-        <tr>
-          <td class="memname">void LBMMicroscopicStateQ9::CreateMicroscopicState </td>
-          <td>(</td>
-          <td class="paramtype">int&#160;</td>
-          <td class="paramname"><em>n</em>, </td>
-        </tr>
-        <tr>
-          <td class="paramkey"></td>
-          <td></td>
-          <td class="paramtype">int&#160;</td>
-          <td class="paramname"><em>p</em>&#160;</td>
-        </tr>
-        <tr>
-          <td></td>
-          <td>)</td>
-          <td></td><td></td>
-        </tr>
-      </table>
-  </td>
-  <td class="mlabels-right">
-<span class="mlabels"><span class="mlabel">virtual</span></span>  </td>
-  </tr>
-</table>
-</div><div class="memdoc">
-
-<p>Implements <a class="el" href="classLBMAbstractMicroscopicState.html">LBMAbstractMicroscopicState</a>.</p>
-
-</div>
-</div>
-<a id="a8e2acefa86e14e1a01b03d9876d4416f" name="a8e2acefa86e14e1a01b03d9876d4416f"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#a8e2acefa86e14e1a01b03d9876d4416f">&#9670;&nbsp;</a></span>GetMicroscopicCell()</h2>
+<a id="abe5920bd2bfe900f7faf1b1088b548f5" name="abe5920bd2bfe900f7faf1b1088b548f5"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#abe5920bd2bfe900f7faf1b1088b548f5">&#9670;&nbsp;</a></span>GetMicroscopicCell()</h2>
 
 <div class="memitem">
 <div class="memproto">
@@ -330,25 +327,158 @@ std::vector&lt; std::vector&lt; std::vector&lt; std::vector&lt; double &gt; &gt;
           <td class="memname">double LBMMicroscopicStateQ9::GetMicroscopicCell </td>
           <td>(</td>
           <td class="paramtype">int&#160;</td>
-          <td class="paramname"><em>i</em>, </td>
+          <td class="paramname"><em>rowIndex</em>, </td>
         </tr>
         <tr>
           <td class="paramkey"></td>
           <td></td>
           <td class="paramtype">int&#160;</td>
-          <td class="paramname"><em>j</em>, </td>
+          <td class="paramname"><em>colIndex</em>, </td>
         </tr>
         <tr>
           <td class="paramkey"></td>
           <td></td>
           <td class="paramtype">int&#160;</td>
-          <td class="paramname"><em>ii</em>, </td>
+          <td class="paramname"><em>subRowIndex</em>, </td>
         </tr>
         <tr>
           <td class="paramkey"></td>
           <td></td>
           <td class="paramtype">int&#160;</td>
-          <td class="paramname"><em>jj</em>&#160;</td>
+          <td class="paramname"><em>subColIndex</em>&#160;</td>
+        </tr>
+        <tr>
+          <td></td>
+          <td>)</td>
+          <td></td><td> const</td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">virtual</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+<p>Returns the value at the specified cell in this microscopic state. </p>
+<dl class="params"><dt>Parameters</dt><dd>
+  <table class="params">
+    <tr><td class="paramname">rowIndex</td><td>Index of the row of the point to return</td></tr>
+    <tr><td class="paramname">colIndex</td><td>Index of the column of the point to return</td></tr>
+    <tr><td class="paramname">subRowIndex</td><td>Index of the subrow of the cell to return</td></tr>
+    <tr><td class="paramname">subColIndex</td><td>Index of the subcol of the cell to return </td></tr>
+  </table>
+  </dd>
+</dl>
+
+<p>Implements <a class="el" href="classLBMMicroscopicStateAbstract.html#abb5417a2a8879ab3f3e78c221e1d0535">LBMMicroscopicStateAbstract</a>.</p>
+
+</div>
+</div>
+<a id="a92c7bc899266b0a88576b70b70ab8b04" name="a92c7bc899266b0a88576b70b70ab8b04"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a92c7bc899266b0a88576b70b70ab8b04">&#9670;&nbsp;</a></span>GetSumOfPoint()</h2>
+
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">double LBMMicroscopicStateQ9::GetSumOfPoint </td>
+          <td>(</td>
+          <td class="paramtype">int&#160;</td>
+          <td class="paramname"><em>rowIndex</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">int&#160;</td>
+          <td class="paramname"><em>colIndex</em>&#160;</td>
+        </tr>
+        <tr>
+          <td></td>
+          <td>)</td>
+          <td></td><td> const</td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">virtual</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+<p>Returns the sum of all cells of the specified point in the microscopic state. </p>
+<p >The sum is :</p>
+<p class="formulaDsp">
+\begin{align*} S = \sum_{i}^{n} \sum_{j}^{p} \sum_{ii}^{3} \sum_{jj}^{3} f_{ii,jj}(rowIndex,colIndex) \end{align*}
+</p>
+<dl class="params"><dt>Parameters</dt><dd>
+  <table class="params">
+    <tr><td class="paramname">rowIndex</td><td>Index of the row of the point where sum cells</td></tr>
+    <tr><td class="paramname">colIndex</td><td>Index of the column of the point where sum cells </td></tr>
+  </table>
+  </dd>
+</dl>
+
+<p>Implements <a class="el" href="classLBMMicroscopicStateAbstract.html#a707659f6c8850868dc9ab473860cc231">LBMMicroscopicStateAbstract</a>.</p>
+
+</div>
+</div>
+<a id="a54b7513fe35c696bcafd798a8abf2c83" name="a54b7513fe35c696bcafd798a8abf2c83"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a54b7513fe35c696bcafd798a8abf2c83">&#9670;&nbsp;</a></span>GetSumOfState()</h2>
+
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">double LBMMicroscopicStateQ9::GetSumOfState </td>
+          <td>(</td>
+          <td class="paramname"></td><td>)</td>
+          <td> const</td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">virtual</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+<p>Returns the sum of all cells in the microscopic state. </p>
+<p >The sum is :</p>
+<p class="formulaDsp">
+\begin{align*} S = \sum_{i}^{n} \sum_{j}^{p} \sum_{ii}^{3} \sum_{jj}^{3} f_{ii,jj}(i,j) \end{align*}
+</p>
+ 
+<p>Implements <a class="el" href="classLBMMicroscopicStateAbstract.html#a2a5f251a2f0cd247d7bcaaf3afc1ada5">LBMMicroscopicStateAbstract</a>.</p>
+
+</div>
+</div>
+<a id="a22a2ee283ac4399dc6b73190126548e4" name="a22a2ee283ac4399dc6b73190126548e4"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a22a2ee283ac4399dc6b73190126548e4">&#9670;&nbsp;</a></span>InitializeMicroscopicState()</h2>
+
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">void LBMMicroscopicStateQ9::InitializeMicroscopicState </td>
+          <td>(</td>
+          <td class="paramtype">int&#160;</td>
+          <td class="paramname"><em>nbRows</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">int&#160;</td>
+          <td class="paramname"><em>nbCols</em>&#160;</td>
         </tr>
         <tr>
           <td></td>
@@ -363,12 +493,21 @@ std::vector&lt; std::vector&lt; std::vector&lt; std::vector&lt; double &gt; &gt;
 </table>
 </div><div class="memdoc">
 
-<p>Implements <a class="el" href="classLBMAbstractMicroscopicState.html">LBMAbstractMicroscopicState</a>.</p>
+<p>Initalizes the microscopic state with all cells to 0. </p>
+<dl class="params"><dt>Parameters</dt><dd>
+  <table class="params">
+    <tr><td class="paramname">nbRows</td><td>Number of rows with which initialize the microscopic state</td></tr>
+    <tr><td class="paramname">nbCols</td><td>Number of rows with which initialize the microscopic state </td></tr>
+  </table>
+  </dd>
+</dl>
+
+<p>Implements <a class="el" href="classLBMMicroscopicStateAbstract.html#a8cc163e7c2bbd4c817f4e630b5ec8d1b">LBMMicroscopicStateAbstract</a>.</p>
 
 </div>
 </div>
-<a id="aaed2dacf8aec0b8653972cd8375561ad" name="aaed2dacf8aec0b8653972cd8375561ad"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#aaed2dacf8aec0b8653972cd8375561ad">&#9670;&nbsp;</a></span>GetNumberOfNeighbourhoodCells()</h2>
+<a id="a1f50cfcd96c33ccf905785c0e15a994e" name="a1f50cfcd96c33ccf905785c0e15a994e"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a1f50cfcd96c33ccf905785c0e15a994e">&#9670;&nbsp;</a></span>Reset()</h2>
 
 <div class="memitem">
 <div class="memproto">
@@ -377,7 +516,7 @@ std::vector&lt; std::vector&lt; std::vector&lt; std::vector&lt; double &gt; &gt;
   <td class="mlabels-left">
       <table class="memname">
         <tr>
-          <td class="memname">int LBMMicroscopicStateQ9::GetNumberOfNeighbourhoodCells </td>
+          <td class="memname">void LBMMicroscopicStateQ9::Reset </td>
           <td>(</td>
           <td class="paramname"></td><td>)</td>
           <td></td>
@@ -390,126 +529,14 @@ std::vector&lt; std::vector&lt; std::vector&lt; std::vector&lt; double &gt; &gt;
 </table>
 </div><div class="memdoc">
 
-<p>Implements <a class="el" href="classLBMAbstractMicroscopicState.html">LBMAbstractMicroscopicState</a>.</p>
+<p>Resets the microscopic state by putting all cells to 0. </p>
+
+<p>Implements <a class="el" href="classLBMMicroscopicStateAbstract.html#a1aa4f6190e7f097940df376a14ada535">LBMMicroscopicStateAbstract</a>.</p>
 
 </div>
 </div>
-<a id="a07fabcb731d6432abf676f9ac7863fc5" name="a07fabcb731d6432abf676f9ac7863fc5"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#a07fabcb731d6432abf676f9ac7863fc5">&#9670;&nbsp;</a></span>GetSumOfPoint()</h2>
-
-<div class="memitem">
-<div class="memproto">
-<table class="mlabels">
-  <tr>
-  <td class="mlabels-left">
-      <table class="memname">
-        <tr>
-          <td class="memname">double LBMMicroscopicStateQ9::GetSumOfPoint </td>
-          <td>(</td>
-          <td class="paramtype">int&#160;</td>
-          <td class="paramname"><em>i</em>, </td>
-        </tr>
-        <tr>
-          <td class="paramkey"></td>
-          <td></td>
-          <td class="paramtype">int&#160;</td>
-          <td class="paramname"><em>j</em>&#160;</td>
-        </tr>
-        <tr>
-          <td></td>
-          <td>)</td>
-          <td></td><td></td>
-        </tr>
-      </table>
-  </td>
-  <td class="mlabels-right">
-<span class="mlabels"><span class="mlabel">virtual</span></span>  </td>
-  </tr>
-</table>
-</div><div class="memdoc">
-
-<p>Implements <a class="el" href="classLBMAbstractMicroscopicState.html">LBMAbstractMicroscopicState</a>.</p>
-
-</div>
-</div>
-<a id="afc5af85560541cd544cde240317f6b94" name="afc5af85560541cd544cde240317f6b94"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#afc5af85560541cd544cde240317f6b94">&#9670;&nbsp;</a></span>GetSumOfState()</h2>
-
-<div class="memitem">
-<div class="memproto">
-<table class="mlabels">
-  <tr>
-  <td class="mlabels-left">
-      <table class="memname">
-        <tr>
-          <td class="memname">double LBMMicroscopicStateQ9::GetSumOfState </td>
-          <td>(</td>
-          <td class="paramtype">int&#160;</td>
-          <td class="paramname"><em>n</em>, </td>
-        </tr>
-        <tr>
-          <td class="paramkey"></td>
-          <td></td>
-          <td class="paramtype">int&#160;</td>
-          <td class="paramname"><em>p</em>&#160;</td>
-        </tr>
-        <tr>
-          <td></td>
-          <td>)</td>
-          <td></td><td></td>
-        </tr>
-      </table>
-  </td>
-  <td class="mlabels-right">
-<span class="mlabels"><span class="mlabel">virtual</span></span>  </td>
-  </tr>
-</table>
-</div><div class="memdoc">
-
-<p>Implements <a class="el" href="classLBMAbstractMicroscopicState.html">LBMAbstractMicroscopicState</a>.</p>
-
-</div>
-</div>
-<a id="aa2bf75802ca0a81800b5345a4097c53c" name="aa2bf75802ca0a81800b5345a4097c53c"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#aa2bf75802ca0a81800b5345a4097c53c">&#9670;&nbsp;</a></span>Reset()</h2>
-
-<div class="memitem">
-<div class="memproto">
-<table class="mlabels">
-  <tr>
-  <td class="mlabels-left">
-      <table class="memname">
-        <tr>
-          <td class="memname">void LBMMicroscopicStateQ9::Reset </td>
-          <td>(</td>
-          <td class="paramtype">int&#160;</td>
-          <td class="paramname"><em>n</em>, </td>
-        </tr>
-        <tr>
-          <td class="paramkey"></td>
-          <td></td>
-          <td class="paramtype">int&#160;</td>
-          <td class="paramname"><em>p</em>&#160;</td>
-        </tr>
-        <tr>
-          <td></td>
-          <td>)</td>
-          <td></td><td></td>
-        </tr>
-      </table>
-  </td>
-  <td class="mlabels-right">
-<span class="mlabels"><span class="mlabel">virtual</span></span>  </td>
-  </tr>
-</table>
-</div><div class="memdoc">
-
-<p>Implements <a class="el" href="classLBMAbstractMicroscopicState.html">LBMAbstractMicroscopicState</a>.</p>
-
-</div>
-</div>
-<a id="a82002ee23fecf864b031e43d7055ee07" name="a82002ee23fecf864b031e43d7055ee07"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#a82002ee23fecf864b031e43d7055ee07">&#9670;&nbsp;</a></span>SetMicroscopicCell()</h2>
+<a id="a78972759dce0239e28ed37b41dcc9557" name="a78972759dce0239e28ed37b41dcc9557"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a78972759dce0239e28ed37b41dcc9557">&#9670;&nbsp;</a></span>SetMicroscopicCell()</h2>
 
 <div class="memitem">
 <div class="memproto">
@@ -521,25 +548,25 @@ std::vector&lt; std::vector&lt; std::vector&lt; std::vector&lt; double &gt; &gt;
           <td class="memname">void LBMMicroscopicStateQ9::SetMicroscopicCell </td>
           <td>(</td>
           <td class="paramtype">int&#160;</td>
-          <td class="paramname"><em>i</em>, </td>
+          <td class="paramname"><em>rowIndex</em>, </td>
         </tr>
         <tr>
           <td class="paramkey"></td>
           <td></td>
           <td class="paramtype">int&#160;</td>
-          <td class="paramname"><em>j</em>, </td>
+          <td class="paramname"><em>colIndex</em>, </td>
         </tr>
         <tr>
           <td class="paramkey"></td>
           <td></td>
           <td class="paramtype">int&#160;</td>
-          <td class="paramname"><em>ii</em>, </td>
+          <td class="paramname"><em>subRowIndex</em>, </td>
         </tr>
         <tr>
           <td class="paramkey"></td>
           <td></td>
           <td class="paramtype">int&#160;</td>
-          <td class="paramname"><em>jj</em>, </td>
+          <td class="paramname"><em>subColIndex</em>, </td>
         </tr>
         <tr>
           <td class="paramkey"></td>
@@ -560,41 +587,25 @@ std::vector&lt; std::vector&lt; std::vector&lt; std::vector&lt; double &gt; &gt;
 </table>
 </div><div class="memdoc">
 
-<p>Implements <a class="el" href="classLBMAbstractMicroscopicState.html">LBMAbstractMicroscopicState</a>.</p>
+<p>Replaces the value at the specified cell in this microscopic state with the specified value. </p>
+<dl class="params"><dt>Parameters</dt><dd>
+  <table class="params">
+    <tr><td class="paramname">rowIndex</td><td>Index of the row of the point to replace</td></tr>
+    <tr><td class="paramname">colIndex</td><td>Index of the column of the point to replace</td></tr>
+    <tr><td class="paramname">subRowIndex</td><td>Index of the subrow of the cell to replace</td></tr>
+    <tr><td class="paramname">subColIndex</td><td>Index of the subcol of the cell to replace</td></tr>
+    <tr><td class="paramname">value</td><td>Value to be stored at the specified cell </td></tr>
+  </table>
+  </dd>
+</dl>
 
-</div>
-</div>
-<a id="ad97cc1675e782a6e3cc03f2bcdbbf392" name="ad97cc1675e782a6e3cc03f2bcdbbf392"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#ad97cc1675e782a6e3cc03f2bcdbbf392">&#9670;&nbsp;</a></span>UpdateMicroscopicStateFromImage()</h2>
-
-<div class="memitem">
-<div class="memproto">
-<table class="mlabels">
-  <tr>
-  <td class="mlabels-left">
-      <table class="memname">
-        <tr>
-          <td class="memname">void LBMMicroscopicStateQ9::UpdateMicroscopicStateFromImage </td>
-          <td>(</td>
-          <td class="paramtype"><a class="el" href="classLBMImage.html">LBMImage</a> &amp;&#160;</td>
-          <td class="paramname"><em>rImage</em></td><td>)</td>
-          <td></td>
-        </tr>
-      </table>
-  </td>
-  <td class="mlabels-right">
-<span class="mlabels"><span class="mlabel">virtual</span></span>  </td>
-  </tr>
-</table>
-</div><div class="memdoc">
-
-<p>Implements <a class="el" href="classLBMAbstractMicroscopicState.html">LBMAbstractMicroscopicState</a>.</p>
+<p>Implements <a class="el" href="classLBMMicroscopicStateAbstract.html#aebe175107e0e616e34addcf800a4fec6">LBMMicroscopicStateAbstract</a>.</p>
 
 </div>
 </div>
 <hr/>The documentation for this class was generated from the following files:<ul>
-<li>/home/alex/Desktop/Projet_Indus/WS/LBM-Dithering/include/dithering/LBMMicroscopicStateQ9.h</li>
-<li>/home/alex/Desktop/Projet_Indus/WS/LBM-Dithering/src/dithering/microscopicState/LBMMicroscopicStateQ9.cpp</li>
+<li>/home/alex/Desktop/Projet_Indus/WS/LBM-Dithering/include/dithering/<a class="el" href="LBMMicroscopicStateQ9_8h.html">LBMMicroscopicStateQ9.h</a></li>
+<li>/home/alex/Desktop/Projet_Indus/WS/LBM-Dithering/src/dithering/microscopicState/<a class="el" href="LBMMicroscopicStateQ9_8cpp.html">LBMMicroscopicStateQ9.cpp</a></li>
 </ul>
 </div><!-- contents -->
 <!-- start footer part -->

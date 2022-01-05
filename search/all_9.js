@@ -1,4 +1,4 @@
 var searchData=
 [
-  ['normtwo_0',['NormTwo',['../classLBMMetrics.html#a53f7f8b67f7483020410700287fcdcc1',1,'LBMMetrics']]]
+  ['normtwo_0',['NormTwo',['../classLBMImageMetrics.html#af6e7164a61c610ed75df5f3a0b7e5ca0',1,'LBMImageMetrics']]]
 ];

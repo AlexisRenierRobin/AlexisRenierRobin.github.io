@@ -1,8 +1,6 @@
 var searchData=
 [
-  ['saveimage_0',['SaveImage',['../classLBMImage.html#a8e7e65be09763f0828db6c77870e72bd',1,'LBMImage']]],
-  ['setheader_1',['setHeader',['../classCsvfile.html#ab625d5485d779f26f39afbd379ac3169',1,'Csvfile']]],
-  ['setimagepoint_2',['SetImagePoint',['../classLBMImage.html#ac52bf1d5a1487f80f72e820a2eca8d11',1,'LBMImage']]],
-  ['skip_3',['skip',['../classCsvfile.html#aeac19c7da7643b0feea883e94a0fc7e0',1,'Csvfile']]],
-  ['spdlog_5factive_5flevel_4',['SPDLOG_ACTIVE_LEVEL',['../LBMConfiguration_8h.html#ae4fda6f71f35120e2ff48157fca961b5',1,'LBMConfiguration.h']]]
+  ['reset_0',['Reset',['../classLBMMicroscopicStateAbstract.html#a1aa4f6190e7f097940df376a14ada535',1,'LBMMicroscopicStateAbstract::Reset()'],['../classLBMMicroscopicStateQ9.html#a1f50cfcd96c33ccf905785c0e15a994e',1,'LBMMicroscopicStateQ9::Reset()']]],
+  ['rmse_1',['RMSE',['../classLBMImageMetrics.html#aadc897cd6a839a5b2dec9a3ad2534997',1,'LBMImageMetrics']]],
+  ['run_2',['Run',['../classLBMDither.html#a5920cc71e8a5ed046764f7a0a03480e9',1,'LBMDither']]]
 ];

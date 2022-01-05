@@ -28,7 +28,7 @@ MathJax.Hub.Config({
  <tbody>
  <tr id="projectrow">
   <td id="projectalign">
-   <div id="projectname">LBM-DITHERING<span id="projectnumber">&#160;0.0.9</span>
+   <div id="projectname">LBM-DITHERING<span id="projectnumber">&#160;0.2.2</span>
    </div>
    <div id="projectbrief">Halftoning of images with Lattice Boltzmann algorithm</div>
   </td>
@@ -75,7 +75,6 @@ $(function() {
 </div><!-- top -->
 <div class="header">
   <div class="summary">
-<a href="#define-members">Macros</a> &#124;
 <a href="#func-members">Functions</a>  </div>
   <div class="headertitle"><div class="title">main.cpp File Reference</div></div>
 </div><!--header-->
@@ -90,22 +89,15 @@ $(function() {
 <code>#include &quot;opencv2/core/utils/logger.hpp&quot;</code><br />
 <code>#include &quot;opencv2/opencv.hpp&quot;</code><br />
 <code>#include &quot;spdlog/spdlog.h&quot;</code><br />
-<code>#include &quot;dithering/LBMAbstractEquilibriumState.h&quot;</code><br />
-<code>#include &quot;dithering/LBMAbstractMicroscopicState.h&quot;</code><br />
-<code>#include &quot;dithering/LBMDither.h&quot;</code><br />
-<code>#include &quot;dithering/LBMHagenburgEquilibriumState.h&quot;</code><br />
+<code>#include &quot;<a class="el" href="LBMEquilibriumStateCalculatorAbstract_8h.html">dithering/LBMEquilibriumStateCalculatorAbstract.h</a>&quot;</code><br />
+<code>#include &quot;<a class="el" href="LBMMicroscopicStateAbstract_8h.html">dithering/LBMMicroscopicStateAbstract.h</a>&quot;</code><br />
+<code>#include &quot;<a class="el" href="LBMDither_8h.html">dithering/LBMDither.h</a>&quot;</code><br />
+<code>#include &quot;<a class="el" href="LBMEquilibriumStateCalculatorHagenburg_8h.html">dithering/LBMEquilibriumStateCalculatorHagenburg.h</a>&quot;</code><br />
 <code>#include &quot;<a class="el" href="LBMImage_8h.html">dithering/LBMImage.h</a>&quot;</code><br />
 <code>#include &quot;<a class="el" href="LBMImageCreation_8h.html">dithering/LBMImageCreation.h</a>&quot;</code><br />
-<code>#include &quot;dithering/LBMMicroscopicStateQ9.h&quot;</code><br />
-<code>#include &quot;<a class="el" href="LBMMetrics_8h.html">dithering/LBMMetrics.h</a>&quot;</code><br />
+<code>#include &quot;<a class="el" href="LBMMicroscopicStateQ9_8h.html">dithering/LBMMicroscopicStateQ9.h</a>&quot;</code><br />
+<code>#include &quot;<a class="el" href="LBMImageMetrics_8h.html">dithering/LBMImageMetrics.h</a>&quot;</code><br />
 </div><table class="memberdecls">
-<tr class="heading"><td colspan="2"><h2 class="groupheader"><a id="define-members" name="define-members"></a>
-Macros</h2></td></tr>
-<tr class="memitem:ad4e69231a0a65c1e35ca9b3e225722dd"><td class="memItemLeft" align="right" valign="top"><a id="ad4e69231a0a65c1e35ca9b3e225722dd" name="ad4e69231a0a65c1e35ca9b3e225722dd"></a>
-#define&#160;</td><td class="memItemRight" valign="bottom"><b>CORE_VERSION</b>&#160;&#160;&#160;&quot;0.0.3&quot;</td></tr>
-<tr class="memdesc:ad4e69231a0a65c1e35ca9b3e225722dd"><td class="mdescLeft">&#160;</td><td class="mdescRight">Version number of the core version. <br /></td></tr>
-<tr class="separator:ad4e69231a0a65c1e35ca9b3e225722dd"><td class="memSeparator" colspan="2">&#160;</td></tr>
-</table><table class="memberdecls">
 <tr class="heading"><td colspan="2"><h2 class="groupheader"><a id="func-members" name="func-members"></a>
 Functions</h2></td></tr>
 <tr class="memitem:ae66f6b31b5ad750f1fe042a706a4e3d4"><td class="memItemLeft" align="right" valign="top">int&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="main_8cpp.html#ae66f6b31b5ad750f1fe042a706a4e3d4">main</a> ()</td></tr>
