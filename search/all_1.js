@@ -10,8 +10,7 @@ var searchData=
   ['convertfromcvtomatrice_7',['ConvertFromCVToMatrice',['../classLBMImage.html#a18d0a64751e70bcbf822280e8dac4c40',1,'LBMImage']]],
   ['convertfrommatricetocv_8',['ConvertFromMatriceToCV',['../classLBMImage.html#ad2a03da6b53ec44abfe38a6bf2087bdf',1,'LBMImage']]],
   ['copy_9',['Copy',['../classLBMMicroscopicStateQ9.html#a8933abf486bd97bb4da1b6f560594988',1,'LBMMicroscopicStateQ9::Copy()'],['../classLBMImage.html#aec67cc7885d250e08af4ac139bdfed1b',1,'LBMImage::Copy()'],['../classLBMMicroscopicStateAbstract.html#a29cfbd4df40fae709f406f20e7f9a502',1,'LBMMicroscopicStateAbstract::Copy()']]],
-  ['core_5fversion_10',['CORE_VERSION',['../LBMConfiguration_8h.html#ad4e69231a0a65c1e35ca9b3e225722dd',1,'LBMConfiguration.h']]],
-  ['creategaussian_11',['CreateGaussian',['../classLBMImageCreation.html#ab74d904056144559cdea6f7068c10017',1,'LBMImageCreation']]],
-  ['csvfile_12',['Csvfile',['../classCsvfile.html#a5ccf469345f7441d0650a5d3eb216203',1,'Csvfile::Csvfile()'],['../classCsvfile.html',1,'Csvfile']]],
-  ['csvmanipulation_2eh_13',['CSVManipulation.h',['../CSVManipulation_8h.html',1,'']]]
+  ['creategaussian_10',['CreateGaussian',['../classLBMImageCreation.html#ab74d904056144559cdea6f7068c10017',1,'LBMImageCreation']]],
+  ['csvfile_11',['Csvfile',['../classCsvfile.html',1,'Csvfile'],['../classCsvfile.html#a5ccf469345f7441d0650a5d3eb216203',1,'Csvfile::Csvfile()']]],
+  ['csvmanipulation_2eh_12',['CSVManipulation.h',['../CSVManipulation_8h.html',1,'']]]
 ];
